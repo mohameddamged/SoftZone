@@ -8,7 +8,8 @@ namespace SoftZone.BLL
         public static IServiceCollection AddBllServices(this IServiceCollection services)
         {
             // Register AutoMapper
-            services.AddAutoMapper(typeof(MappingProfile));
+            //services.AddAutoMapper(typeof(MappingProfile));
+            services.AddAutoMapper(cfg => { }, typeof(MappingProfile));
 
             // Register Services
             services.AddScoped<ICityService, CityService>();

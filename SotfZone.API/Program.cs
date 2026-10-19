@@ -17,8 +17,11 @@ namespace SotfZone.API
             builder.Services.AddBllServices();
 
             // Configure CORS for Angular Frontend
+            //builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
+            //p.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
+
             builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
-             p.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
+            p.WithOrigins("https://softzone-front.vercel.app").AllowAnyHeader().AllowAnyMethod()));
 
             // Learn more about configuring Swagger/OpenAPI
             builder.Services.AddEndpointsApiExplorer();
