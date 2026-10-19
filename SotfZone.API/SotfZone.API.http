@@ -1,0 +1,6 @@
+@SotfZone.API_HostAddress = http://localhost:5159
+
+GET {{SotfZone.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SoftZone.BLL/SoftZone.BLL.csproj" />
+  <Project Path="SoftZone.Common/SoftZone.Common.csproj" />
+  <Project Path="SoftZone.DAL/SoftZone.DAL.csproj" />
+  <Project Path="SotfZone.API/SotfZone.API.csproj" Id="4f38fc4e-39aa-4f5e-808e-3cb0efa74c43" />
+</Solution>
